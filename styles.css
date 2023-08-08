@@ -1,0 +1,372 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  background-image: url("image/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+  
+}
+
+
+.tieude{
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  border-radius: 15px;
+}
+
+.Name{
+  font-family: 'Kanit', sans-serif;
+  font-size: 40px;
+  margin-left: 20px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #FDE5EC;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  filter: drop-shadow(1px 1px 2px #333);
+
+}
+.logo{
+  cursor: pointer;
+  height: 50px;
+  width: auto;
+  margin-left: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #333;
+}
+
+nav{
+  flex: 1;
+}
+
+.border{
+  height: auto;
+  width: auto;
+  background-color: #FCF8E8;
+  border-radius: 20px;
+  box-shadow: 1px 2px 5px #333;
+  padding: 5px 20px;
+  margin-top: -5px;
+}
+ul#main-menu a::after {
+  content: "";
+  height: 3px;
+  width: 0px;
+  background: #916DB3;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+
+
+}
+
+ul#main-menu a:hover::after {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5vh;
+ 
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+  position: relative;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:  #916DB3;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.arrow-icons{
+  height: 95%;
+  position:absolute;
+  bottom: 0;
+  right: 80px;
+  filter: drop-shadow(-5px 5px 10px #0c0c0c98);
+
+}
+
+.content {
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  margin-top: 5%;
+  display: flex;
+  justify-content:center;
+  margin-right: 60vh;
+  filter: drop-shadow(5px 5px 10px #33333362);
+  -webkit-text-stroke: 1px #FCF8E8;
+
+  background: url(image/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+#banner .box-right {
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 25vh;
+  filter: drop-shadow(5px 5px 10px #333);
+}
+
+#banner .box-right img {
+  margin: 0 10px;
+  animation :animation 3s infinite linear
+}
+#banner .box-right img:nth-child(1)
+{
+  animation-delay: 0.5s;
+}
+#banner .box-right img:nth-child(2)
+{
+  animation-delay: 1s;
+}
+@keyframes animation {
+  0%{
+      transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-10px);
+  } 
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.body2{
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 10px;
+}
+
+
+.box {
+  width: 15%;
+  border-radius: 15px;
+}
+
+/* phan 2*/
+
+.keyboard{
+  background-image: 
+   linear-gradient(140deg, #E48586 0%, #FCBAAD 50%, #916DB3 90%);
+
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  position: absolute;
+  
+}
+
+.banphim {
+  background-color: #0089a1;
+  width: 50vh;
+  height: calc(100% - 70px);
+  margin-left: calc(100% - 50vh);
+}
+.menu{
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+#layout {
+  height: auto;
+  padding-top: 10px;
+  margin-left: calc(100% - 200px);
+  filter: drop-shadow(1px 1px 2px #333);
+  position: absolute;
+
+}
+
+.keycap-keyboard {
+  background-image: 
+  linear-gradient(140deg, #e485862a 0%, #fcbaad31 50%, #58555a38 90%),
+  url(image/keyboard.png);
+  background-size: cover;
+  height: 45vh;
+  width: 125vh;
+  border-radius: 15px;
+  border: #333;
+  filter: drop-shadow(5px 5px 5px #333);
+  border: solid #ffffff 2px;
+  margin-left: calc(50% - 75vh);
+  margin-top: 20vh;
+
+}
+
+
+/************************************* button *****************************/
+button {
+  font-family: monospace;
+  font-size: 1rem;
+  color: #a15c5d;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #916DB3;
+  background: #FCBAAD;
+  box-shadow: 3px 3px 3px #916DB3;
+  cursor: pointer;
+  margin: 5px 0;
+  height: 50px;
+  width: 150px;
+  font-weight: bold;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+ul#buttons {
+  list-style-type: none;
+  align-items: center;
+}
+
+/***************************** card **************************************************/
+.myCard {
+  background-color: transparent;
+  width: 45vh;
+  height: 65vh;
+  perspective: 1000px;
+  font-family: Montserrat,sans-serif;
+  display: block;
+  margin-top: 10vh;
+  margin-left: 50vh;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+
+.frontSide,
+.frontSide::before {
+  background-image: url(image/card.png);
+  background-size: cover;
+}
+
+.backSide,
+.backSide::before {
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.backSide {
+  transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
